@@ -1,0 +1,153 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.filtros-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.filtros-container select,
+.filtros-container input[type=range],
+.filtros-container button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+  min-width: 150px;
+  background-color: #fff;
+  color: #000;
+}
+
+.filtros-container button {
+  background-color: #f6bd00;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.filtros-activos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.chip {
+  background: #e20613;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+}
+
+.chip button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.coches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.coche-card {
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.coche-card:hover {
+  transform: translateY(-5px);
+}
+
+.coche-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #f6bd00;
+}
+
+.coche-body {
+  padding: 15px;
+}
+
+.coche-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.coche-sub {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: #000;
+}
+
+.precio-final {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.btn-ver {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #f6bd00;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #f6bd00;
+  color: #000;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
